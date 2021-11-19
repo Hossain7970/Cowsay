@@ -1,0 +1,15 @@
+<nav>
+    <button><a href="/">Home</a></button>
+    <button><a href="/history">Most Recent</a></button
+</nav>
+<P>What do you want the cow to say?</P>
+<form action="" method="POST">
+    {% csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Submit"/>
+</form>
+
+{% if messages %}
+<pre>{{messages}}</pre>
+{% endif %}
+

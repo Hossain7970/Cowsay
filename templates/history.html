@@ -1,0 +1,11 @@
+<nav>
+    <button><a href="/">Home</a></button>
+    <button><a href="/history">Most Recent</a></button>
+</nav>
+
+{% for message in latest_messages %}
+<li>
+   {{message}}
+</li>
+
+{% endfor %}
